@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  background-color: teal;
+}
+
+.cursor-dot{
+  height: 10px;
+  width: 10px;
+  background-color: rgb(222, 13, 83);
+}
+
+.cursor-outline{
+  height: 35px;
+  width: 35px;
+  /* border: 3px solid palevioletred ; */
+  background-color: hsla(320, 49%, 50%, 0.5); 
+
+}
+
+.cursor-dot,
+.cursor-outline{
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50% , -50%);
+  border-radius: 50%;
+  z-index: 1;
+  pointer-events:none ; 
+  
+}
+
